@@ -1,0 +1,141 @@
+:root {
+    --skin: #f6c09c;
+    --background: #ed4042;
+    --red: #ed2860;
+    --dark-red: #680524;
+    --black: #00243a;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+.head {
+    width: 100px;
+    height: 200px;
+    background: var(--skin);
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.eye-left,
+.eye-right {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+}
+
+.eye-left {
+    left: 24px;
+}
+
+.eye-left div,
+.eye-right div {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+}
+
+.eye-left div {
+    left: 12px;
+}
+
+.eye-right div {
+    right: 12px;
+}
+
+.eye-right {
+    right: 24px;
+}
+
+.noise {
+    width: 35px;
+    height: 35px;
+    background: var(--skin);
+    border-radius: 50px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+.moustache {
+    width: 100px;
+    height: 120px;
+    background-color: black;
+    top: 90px;
+    position: absolute;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.mouth {
+    background-color: rgb(153, 13, 13);
+    width: 50px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    top: 120px;
+    left: 25px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.tooth {
+    width: 35px;
+    height: 10px;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+    top: 95px;
+    left: 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 80px;
+}
+
+.tongue {
+    width: 20px;
+    height: 10px;
+    background-color: rgb(236, 15, 15);
+    top: 100px;
+    position: relative;
+    left: 34px;
+    z-index: 4;
+    /* border-top-left-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.earn-left,
+.earn-right {
+    width: 20px;
+    height: 20px;
+    background-color: var(--skin);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.earn-left {
+    right: 214px;
+}
+
+.earn-right {
+    left: 214px;
+    top: 251px;
+}
